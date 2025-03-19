@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainScan AI - Upload MRI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="BrainScan AI Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/upload">Upload MRI</a></li>
+                <li><a href="/learn">Learn</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="upload-section">
+        <h2>Upload Your MRI Scan</h2>
+        <form id="upload-form" action="/analyze" method="POST" enctype="multipart/form-data">
+            <div class="upload-zone">
+                <input type="file" id="mri-file" name="mri-file" accept=".jpg,.jpeg,.png,.dicom" required>
+                <label for="mri-file">Drag your MRI file here or click to upload.</label>
+            </div>
+            <button type="submit" class="btn-primary">Analyze Scan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BrainScan AI. All rights reserved.</p>
+    </footer>
+</body>
+</html>

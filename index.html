@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainScan AI - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="BrainScan AI Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/upload">Upload MRI</a></li>
+                <li><a href="/learn">Learn</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Detect Brain Tumors with AI-Powered Precision</h1>
+        <p>Upload your MRI scan and get instant insights on tumor presence and size.</p>
+        <div class="cta">
+            <a href="/upload" class="btn-primary">Upload MRI Scan</a>
+            <a href="/upload" class="btn-secondary">Try Sample MRI</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BrainScan AI. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainScan AI - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="BrainScan AI Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/upload">Upload MRI</a></li>
+                <li><a href="/learn">Learn</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="results-section">
+        <h2>Your MRI Analysis Results</h2>
+        <div class="result">
+            <p><strong>Tumor Detected:</strong> <span id="tumor-status">✅ Yes</span></p>
+            <p><strong>Tumor Size:</strong> <span id="tumor-size">🔴 Large</span></p>
+            <p><strong>Confidence:</strong> <span id="confidence">98%</span></p>
+        </div>
+        <div class="actions">
+            <a href="#" class="btn-primary">Consult a Doctor</a>
+            <a href="#" class="btn-secondary">Download Report</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BrainScan AI. All rights reserved.</p>
+    </footer>
+</body>
+</html>
