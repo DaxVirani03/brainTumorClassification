@@ -1,0 +1,21 @@
+brain-tumor-website/
+│
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       └── logo.png
+│
+├── templates/
+│   ├── index.html
+│   ├── upload.html
+│   ├── results.html
+│   ├── learn.html
+│   ├── about.html
+│   ├── contact.html
+│   └── privacy.html
+│
+├── app.py
+└── requirements.txt
